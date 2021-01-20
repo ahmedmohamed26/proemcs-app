@@ -24,6 +24,7 @@
 @media (max-width:768px) {
     .home {
         display: inherit;
+        height: 100% !important;
         .first-column {
             order: 2;
             margin-top: 20px;

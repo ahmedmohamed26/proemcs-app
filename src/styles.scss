@@ -2,10 +2,14 @@
 @import './assets/style/variables.scss';
 @import './assets/style/fonts.scss';
 
+html{
+ 
+    overflow-x: hidden ;
+}
 
-body, html {
+body {
     height: 100%;
-        overflow-x: hidden ;
+    overflow-x: hidden ;
 }
 .owl-theme .owl-dots .owl-dot span{
     background: #E2DEF4;

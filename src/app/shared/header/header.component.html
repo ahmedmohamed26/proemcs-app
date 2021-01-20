@@ -1,16 +1,10 @@
 <header>
-
   <div class="container">
 
     <div id="mySidenav" class="sidenav" [ngClass]="{'sidenavToggle': sideMob}">
       <ul class="list-unstyled navItem">
         <li>
           <a href="javascript:void(0)" class="closebtn" (click)="openNav()">&times;</a>
-        </li>
-        <li>
-          <a routerLink="/home" (click)="openNav('home')">
-            Home
-          </a>
         </li>
         <li *ngFor='let item of routerList'>
           <a [routerLinkActive]="item.isActive ? 'active' : ''" [routerLink]="'/' + item.path" (click)="openNav(item.path)">
