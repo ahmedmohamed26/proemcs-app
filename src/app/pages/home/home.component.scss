@@ -1,0 +1,53 @@
+@import '../../../assets/style/variables.scss';
+.home {
+    height: 75%;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    .parent {
+        h2 {
+            font-size: 65px;
+            color: $primaryColor;
+            font-family: 'Cairo-Bold';
+        }
+        h6 {
+            font-size:$defaultSize;
+            color: $primaryColor;
+        }
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .home {
+        display: inherit;
+        .first-column {
+            order: 2;
+            margin-top: 20px;
+        }
+
+        .second-column {
+            order: 1;
+           
+        }
+        .parent {
+            h2 {
+                font-size: 60px;
+                color: $primaryColor !important;
+                font-family: 'Cairo-Bold';
+                text-shadow: 1.5px 1.5px #00000059;
+            }
+            h6 {
+                font-size: 14px;
+                color: $primaryColor !important;
+                text-shadow: 1.5px 1.5px #00000059;
+            }
+            img {
+                margin-top: 30px;
+            }
+        }
+    }
+}

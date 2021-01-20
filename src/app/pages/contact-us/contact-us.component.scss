@@ -1,0 +1,83 @@
+@import '../../../assets/style/variables.scss';
+.contact-us {
+    height: 75%;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    .parent {
+        .all {
+            margin-bottom: 0;
+            padding-right: 0;
+            .allItem {
+                display: inline-flex;
+                align-items: center;
+                margin-bottom: 10px;
+                .fa {
+                    color: $primaryColor;
+                    margin-right: 10px;
+                    font-size: $defaultSize;
+                }
+                h5 {
+                    font-size: $defaultSize;
+                    color:$primaryColor;
+                    margin-bottom: 0;
+                    font-weight: 600;
+                    font-family: 'Arial';
+                }
+                a {
+                    font-size: $defaultSize;
+                    color: $primaryColor;
+                    font-weight: 600;
+                    text-decoration: none;
+                    font-family: 'Arial';
+                }
+            }
+            iframe{
+                width: 100%;
+                height: 200px;
+                margin-top: 15px;
+            }
+        }
+        .contact {
+            width: 100%;
+        }
+    }
+}
+
+
+
+@media(max-width:768px){
+    .contact-us{
+        display: inherit;
+        .first-column{
+            order:2
+        }
+        .second-column{
+            order:1
+        }
+        .parent {
+            .all{
+                margin-top: 10px !important;
+                .allItem{
+                    li{
+                        line-height: 2 !important;
+                    }
+                    .fa{
+                        font-size: 18px !important;
+                    }
+                    h5{
+                        line-height: 1.5 !important;
+                    }
+                }
+                iframe{
+                    width: 100%;
+                    height: 300px !important;
+                    margin-top: 20px;
+                }
+            }
+            .contact {
+              margin-top: 20px;
+            }
+        }
+    }
+}

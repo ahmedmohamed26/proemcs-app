@@ -28,9 +28,20 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css", 
+            "node_modules/font-awesome/css/font-awesome.min.css",
+            "node_modules/owl.carousel/dist/assets/owl.carousel.css",
+            "node_modules/owl.carousel/dist/assets/owl.theme.default.css",    
+            "node_modules/aos/dist/aos.css",
+            "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/owl.carousel/dist/owl.carousel.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/aos/dist/aos.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -123,6 +134,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "proemcs-app"
+    }
+  },
+  "defaultProject": "proemcs-app",
+  "cli": {
+    "analytics": "53ba990d-b28a-4f80-9978-f85e2fd54f98"
+  }
 }

@@ -1,0 +1,31 @@
+.our-client {
+    height: 75%;
+    display: flex;
+    align-items: center;
+    .parent {
+        img {
+            width: 131px;
+            height: 131px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        .img-present {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media(max-width:768px){
+    .our-client{
+        display: inherit;
+        .first-column {
+            order: 2
+        }
+
+        .second-column {
+            order: 1;
+            margin-top: 20px;
+        }
+    }
+}

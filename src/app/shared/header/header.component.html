@@ -1,0 +1,54 @@
+<header>
+
+  <div class="container">
+
+    <div id="mySidenav" class="sidenav" [ngClass]="{'sidenavToggle': sideMob}">
+      <ul class="list-unstyled navItem">
+        <li>
+          <a href="javascript:void(0)" class="closebtn" (click)="openNav()">&times;</a>
+        </li>
+        <li>
+          <a routerLink="/home" (click)="openNav('home')">
+            Home
+          </a>
+        </li>
+        <li *ngFor='let item of routerList'>
+          <a [routerLinkActive]="item.isActive ? 'active' : ''" [routerLink]="'/' + item.path" (click)="openNav(item.path)">
+            {{item.name}}
+          </a>
+        </li>
+
+      </ul>
+      <ul class="list-unstyled">
+        <li class="social-icon-mob" *ngFor='let icon of icons'>
+          <a [class]="icon.ico " [href]='icon.path' target="_blank"></a>
+        </li>
+      </ul>
+
+    </div>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" routerLink="/home">
+        <img [src]='logoPath' alt='Proemcs' class="imgBrand"/>
+        <img src='assets/imgs/mobBrand.png' alt='Proemcs' class="mobBrand"/>  
+      </a>
+      <i class="fa fa-th-list  bars" (click)='openNav()'></i>
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item" *ngFor="let item of routerList">
+            <a [ngClass]="{'items': anotherItems}" class=' nav-link' [routerLinkActive]="item.isActive ? 'active' : ''" [routerLink]="'/' + item.path">
+              {{item.name}}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+

@@ -1,0 +1,27 @@
+<section class="business-line">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6  align-items-center first-column" data-aos="fade-left"  data-aos-duration="400"   data-aos-delay="200">
+                    <div class="parent">
+                        <owl-carousel class='text-center' [options]="customOptions" 
+                        [carouselClasses]="['owl-theme','row', 'sliding']">
+                            <div class="item" *ngFor="let image of images;let i = index">
+                                <div class="thumbnail-image text-center">
+                                    <img [src]="image.pathImg" />
+                                    <h3>{{image.title}}</h3>
+                                    <p>{{image.des}}</p>
+                                </div>
+                            </div>
+                      </owl-carousel>
+                    </div>
+            </div>
+            <!-- col -->
+            <div class="col-md-6 text-center d-flex align-items-center second-column" >
+                <div class="parent">
+                    <img class='business' src='assets/imgs/business.png' alt='' data-aos="fade-right"  data-aos-duration="400"   data-aos-delay="200" />
+                </div>
+            </div>
+            <!-- col -->
+        </div>
+    </div>
+</section>

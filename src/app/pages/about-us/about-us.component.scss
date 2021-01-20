@@ -1,0 +1,45 @@
+@import '../../../assets/style/variables.scss';
+.about {
+    height: 75%;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    .parent {
+        h3 {
+            font-size: 40px;
+            color:$primaryColor;
+            text-transform: uppercase;
+            font-family: 'Segoe-UI-Bold';
+        }
+        p {
+            font-size: 1rem;
+            color: $grayColor;
+            width: 90%;
+            font-family: 'Segoe-UI';
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .about {
+        display: inherit;
+        .first-column {
+            order: 2;
+            margin-top: 20px;
+        }
+
+        .second-column {
+            order: 1;
+           
+        }
+
+        .parent {
+            img {
+                margin-top: 30px;
+            }
+        }
+    }
+}

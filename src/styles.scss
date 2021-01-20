@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import './assets/style/variables.scss';
+@import './assets/style/fonts.scss';
+
+
+body, html {
+    height: 100%;
+        overflow-x: hidden ;
+}
+.owl-theme .owl-dots .owl-dot span{
+    background: #E2DEF4;
+}
+ 
+
+.owl-theme .owl-dots .owl-dot:focus{
+    box-shadow: none;
+    outline: none;
+    border:none;
+}    
+.owl-theme .owl-dots .owl-dot.active span{
+    background: #0F004C;
+}
+
+@media(max-width:768px) {
+    // body {
+    //     filter: blur(10px);
+    // }
+}
